@@ -1,4 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url(./reset.css);
+@import url(reset.css);
+@import url(variables.css);
+@import url(grid.css);
+@import url(components.css);
 
+.card {
+  width: 100%;
+  padding: 4rem;
+  text-align: center;
+}
+
+.card .profile-hero {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.card .profile-hero .profile-hero_image {
+  margin: 0 auto;
+}
+
+.card .profile-hero .profile-hero_title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.card .profile-hero .profile-hero_title h1 {
+  color: var(--color-white);
+  font: var(--text-preset-1);
+  font-weight: 600;
+}
+
+.card .profile-hero .profile-hero_title h2 {
+  color: var(--color-green);
+  font: var(--text-preset-2);
+  font-weight: 700;
+}
+
+.card .profile-hero p {
+  color: var(--color-white);
+  font: var(--text-preset-2);
+  font-style: normal;
+  font-weight: 400;
+}
+
+@media (max-width: 36rem) {
+  .container {
+    width: 100%;
+    max-width: 32rem;
+  }
+  .card .navbar .navbar-menu li a {
+    width: 100%;
+  }
+}
 

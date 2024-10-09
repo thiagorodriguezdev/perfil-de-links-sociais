@@ -1,0 +1,21 @@
+.card .navbar .navbar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.card .navbar .navbar-menu li a {
+  border-radius: 0.8rem;
+  background: var(--color-grey-700);
+  width: 30.4rem;
+  padding: 1.2rem;
+  color: var(--color-white);
+  font: var(--text-preset-2);
+  font-weight: 700;
+  transition: all .3s ease;
+}
+
+.card .navbar .navbar-menu li a:hover {
+  background-color: var(--color-green);
+  color: var(--color-grey-700);
+}
